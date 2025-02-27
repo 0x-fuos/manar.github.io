@@ -256,8 +256,8 @@ h1 {
 }
 
 .note-content h2 {
-    color: #006494; /* اللون الذي اخترته */
-    font-family: 'Roboto', sans-serif; /* تطبيق خط Roboto */
+    color: #006494 !important; /* استخدام !important لضمان تطبيق التعديل */
+    font-family: 'Roboto', sans-serif;
     margin-bottom: 1.5rem;
     font-size: 2rem;
 }
