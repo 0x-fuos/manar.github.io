@@ -22,7 +22,7 @@ html, body {
 
 body {
     font-family: 'Tajawal', sans-serif;
-    background-image: url('https://github.com/0x-fuos/manar.github.io/raw/main/peakpx.jpg');
+    background-image: url('https://raw.githubusercontent.com/0x-fuos/manar.github.io/main/peakpx%20(2).jpg');
     background-size: cover; /* جعل الصورة تغطي كامل الشاشة */
     background-position: center center; /* تحديد وضع الخلفية في منتصف الشاشة */
     background-attachment: fixed; /* جعل الخلفية ثابتة أثناء التمرير */
