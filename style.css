@@ -17,17 +17,11 @@
 }
 
 body {
+    background-image: url('https://github.com/0x-fuos/manar.github.io/raw/main/peakpx.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     font-family: 'Tajawal', sans-serif;
-    background: linear-gradient(135deg, var(--dark-color), #1a1a1a);
-    color: var(--light-color);
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: 400% 400%;
-    animation: gradientBackground 15s ease infinite;
-    direction: rtl;
 }
 
 @keyframes gradientBackground {
