@@ -82,13 +82,13 @@ body {
 }
 
 .content-box {
-    background: rgba(255, 255, 255, 0.3); /* خلفية بيضاء شفافة بدلاً من السوداء */
+    background: rgba(255, 255, 255, 0.15); /* شفافية أقل ليظهر الخلفية أكثر */
     border-radius: 15px;
     padding: 40px;
     text-align: center;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* تخفيف الظل لجعل المظهر أكثر نعومة */
-    backdrop-filter: blur(15px); /* زيادة تأثير الضبابية */
-    border: 1px solid rgba(255, 255, 255, 0.5); /* جعل الحدود أكثر وضوحًا */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* تقليل الظل ليكون أكثر نعومة */
+    backdrop-filter: blur(5px); /* تقليل الضبابية ليكون تأثيرها خفيفًا جدًا */
+    border: 1px solid rgba(255, 255, 255, 0.05); /* جعل الحدود شبه غير مرئية */
     max-width: 800px;
     width: 90%;
     position: relative;
