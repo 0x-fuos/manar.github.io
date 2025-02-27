@@ -16,12 +16,17 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%; /* تأكد من أن المحتوى يغطي الشاشة بالكامل */
+}
+
 body {
     background-image: url('https://github.com/0x-fuos/manar.github.io/raw/main/peakpx.jpg');
-    background-size: cover;
+    background-size: cover; /* تجعل الخلفية تغطي الشاشة بالكامل */
     background-position: center center;
-    background-attachment: fixed;
+    background-attachment: fixed; /* تجعل الخلفية ثابتة عند التمرير */
     font-family: 'Tajawal', sans-serif;
+    color: var(--light-color); /* إذا أردت تغيير لون النص */
 }
 
 @keyframes gradientBackground {
