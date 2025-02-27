@@ -17,16 +17,29 @@
 }
 
 html, body {
-    height: 100%; /* تأكد من أن المحتوى يغطي الشاشة بالكامل */
+    height: 100%; /* تأكد من أن العنصر html و body يغطيان الشاشة بالكامل */
 }
 
 body {
-    background-image: url('https://github.com/0x-fuos/manar.github.io/raw/main/peakpx.jpg');
-    background-size: cover; /* تجعل الخلفية تغطي الشاشة بالكامل */
-    background-position: center center;
-    background-attachment: fixed; /* تجعل الخلفية ثابتة عند التمرير */
     font-family: 'Tajawal', sans-serif;
-    color: var(--light-color); /* إذا أردت تغيير لون النص */
+    background-image: url('https://github.com/0x-fuos/manar.github.io/raw/main/peakpx.jpg');
+    background-size: cover; /* جعل الصورة تغطي كامل الشاشة */
+    background-position: center center; /* تحديد وضع الخلفية في منتصف الشاشة */
+    background-attachment: fixed; /* جعل الخلفية ثابتة أثناء التمرير */
+    color: var(--light-color);
+    height: 100vh; /* تأكد من أن الجسم يغطي الشاشة بالكامل */
+    overflow: hidden;
+    display: flex;
+    align-items: center; /* محاذاة العداد عموديًا في المنتصف */
+    justify-content: center; /* محاذاة العداد أفقيًا في المنتصف */
+    direction: rtl;
+}
+
+/* تخصيص العداد */
+#countdown {
+    font-size: 2em;
+    text-align: center;
+    z-index: 1; /* تأكد من أن العداد فوق الخلفية */
 }
 
 @keyframes gradientBackground {
