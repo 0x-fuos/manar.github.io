@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هدية عيد ميلاد مميزة</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- قسم العد التنازلي -->
+        <div id="countdown-section" class="section active">
+            <div class="content-box">
+                <h1>عيد ميلاد سعيد</h1>
+                <p class="subtitle">باقي على الاحتفال</p>
+                <div class="countdown">
+                    <div class="time-block">
+                        <span id="days" class="time">00</span>
+                        <span class="label">أيام</span>
+                    </div>
+                    <div class="time-block">
+                        <span id="hours" class="time">00</span>
+                        <span class="label">ساعات</span>
+                    </div>
+                    <div class="time-block">
+                        <span id="minutes" class="time">00</span>
+                        <span class="label">دقائق</span>
+                    </div>
+                    <div class="time-block">
+                        <span id="seconds" class="time">00</span>
+                        <span class="label">ثواني</span>
+                    </div>
+                </div>
+                
+                <!-- رسائل الحب -->
+                <div id="hourly-message" class="message-box">
+                    <p id="message-text"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- قسم الاحتفال -->
+        <div id="celebration-section" class="section">
+            <div class="content-box">
+                <h1 class="celebration-title">عيد ميلاد سعيد حبيبتي!</h1>
+                <div id="confetti-container"></div>
+                <div id="hearts-container"></div>
+                <button id="show-note-btn" class="elegant-button">انقر لفتح رسالتي لك</button>
+            </div>
+        </div>
+
+        <!-- قسم الملاحظة -->
+        <div id="note-section" class="section">
+            <div class="content-box note-box">
+                <div class="note-content">
+                    <h2>إلى حبيبة قلبي</h2>
+                    <p id="note-text">
+                        <!-- هنا سيكون نص الملاحظة من ملف JavaScript -->
+                    </p>
+                    <button id="continue-btn" class="elegant-button">استمر</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- قسم الرسالة النهائية -->
+        <div id="final-section" class="section">
+            <div class="content-box">
+                <div class="final-message" id="final-message">
+                    <!-- هنا سيكون النص النهائي من ملف JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
