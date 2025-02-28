@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap');
 
 :root {
     --primary-color: #9c27b0;
@@ -6,7 +7,7 @@
     --accent-color: #ff9e80;
     --dark-color: #2c2c2c;
     --light-color: #ffffff;
-    --gold-color: #d4af37;
+    --blue-color: #006494;  /* تم استبدال اللون الذهبي بلون أزرق جديد */
     --silver-color: #e0e0e0;
 }
 
@@ -17,21 +18,21 @@
 }
 
 html, body {
-    height: 100%; /* تأكد من أن العنصر html و body يغطيان الشاشة بالكامل */
+    height: 100%;
 }
 
 body {
     font-family: 'Tajawal', sans-serif;
     background-image: url('https://raw.githubusercontent.com/0x-fuos/manar.github.io/main/peakpx%20(2).jpg');
-    background-size: cover; /* جعل الصورة تغطي كامل الشاشة */
-    background-position: center center; /* تحديد وضع الخلفية في منتصف الشاشة */
-    background-attachment: fixed; /* جعل الخلفية ثابتة أثناء التمرير */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     color: var(--light-color);
-    height: 100vh; /* تأكد من أن الجسم يغطي الشاشة بالكامل */
+    height: 100vh;
     overflow: hidden;
     display: flex;
-    align-items: center; /* محاذاة العداد عموديًا في المنتصف */
-    justify-content: center; /* محاذاة العداد أفقيًا في المنتصف */
+    align-items: center;
+    justify-content: center;
     direction: rtl;
 }
 
@@ -39,7 +40,7 @@ body {
 #countdown {
     font-size: 2em;
     text-align: center;
-    z-index: 1; /* تأكد من أن العداد فوق الخلفية */
+    z-index: 1;
 }
 
 @keyframes gradientBackground {
@@ -82,13 +83,13 @@ body {
 }
 
 .content-box {
-    background: rgba(255, 255, 255, 0.1); /* شفافية أقل حتى تكون الخلفية الأصلية واضحة */
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     padding: 40px;
     text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* تقليل الظل ليكون شبه غير مرئي */
-    backdrop-filter: blur(3px); /* تقليل الضبابية إلى 3px لجعل الخلفية واضحة أكثر */
-    border: none; /* إزالة الحدود وجعلها تندمج مع الخلفية */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(3px);
+    border: none;
     max-width: 800px;
     width: 90%;
     position: relative;
@@ -110,7 +111,7 @@ body {
 h1 {
     font-size: 3rem;
     margin-bottom: 1.5rem;
-    background: linear-gradient(to right, var(--gold-color), var(--accent-color));
+    background: linear-gradient(to right, var(--blue-color), var(--accent-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -137,18 +138,18 @@ h1 {
 }
 
 .time {
-    font-size: 5rem; /* حجم الخط أكبر من السابق */
+    font-size: 5rem;
     font-weight: 700;
-    color: #ffffff; /* اللون الأبيض */
-    font-family: 'Roboto', sans-serif; /* الخط الجديد */
-    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    background: rgba(0, 100, 148, 0.2);  /* خلفية العداد بلون أزرق شفاف */
     border-radius: 10px;
     padding: 10px 15px;
     display: inline-block;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* إضافة تأثير الظل */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .time::after {
@@ -172,7 +173,7 @@ h1 {
     padding: 20px;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 10px;
-    border-left: 3px solid var(--secondary-color);
+    border-left: 3px solid var(--blue-color);  /* تغيير لون الحدود إلى اللون الأزرق */
     transform: translateY(20px);
     opacity: 0;
     transition: all 0.5s ease;
@@ -193,12 +194,12 @@ h1 {
         filter: hue-rotate(0deg);
     }
     100% {
-        filter: hue-rotate(360deg);
+        filter: hue-rotate(180deg);  /* تعديل درجة تدوير الألوان */
     }
 }
 
 .elegant-button {
-    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(45deg, var(--blue-color), #0099cc);  /* تغيير التدرج في الزر */
     color: white;
     border: none;
     padding: 12px 25px;
@@ -256,7 +257,7 @@ h1 {
 }
 
 .note-content h2 {
-    color: #006494 !important; /* استخدام !important لضمان تطبيق التعديل */
+    color: var(--blue-color) !important;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 1.5rem;
     font-size: 2rem;
@@ -285,7 +286,7 @@ h1 {
 }
 
 .final-message::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
+    background: var(--blue-color);  /* تغيير لون شريط التمرير */
     border-radius: 5px;
 }
 
@@ -293,7 +294,7 @@ h1 {
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: var(--primary-color);
+    background-color: var(--blue-color);  /* تغيير لون الكونفيتي */
     animation: fall linear forwards;
 }
 
