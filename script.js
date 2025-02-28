@@ -145,22 +145,6 @@ function startCelebration() {
     }, 1000);
 }
 
-// دالة إنشاء الـ Confetti
-function createConfetti() {
-    const confettiContainer = document.getElementById('confetti-container');
-    const colors = ['#ff4081', '#7c4dff', '#00bcd4', '#ffeb3b', '#76ff03'];
-    
-    for (let i = 0; i < 100; i++) {
-        const confetti = document.createElement('div');
-        confetti.className = 'confetti';
-        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-        confetti.style.left = Math.random() * 100 + 'vw';
-        confetti.style.animationDuration = (Math.random() * 3 + 2) + 's';
-        confetti.style.animationDelay = (Math.random() * 5) + 's';
-        confettiContainer.appendChild(confetti);
-    }
-}
-
 // دالة إظهار الملاحظة
 function showNote() {
     celebrationSection.classList.remove('active');
@@ -171,7 +155,7 @@ function showNote() {
 
 // دالة إظهار الرسالة النهائية
 function showFinalMessage() {
-    noteSection.classList.remove('active');
+    celebrationSection.classList.remove('active');
     setTimeout(() => {
         finalSection.classList.add('active');
     }, 1000);
