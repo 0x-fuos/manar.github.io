@@ -155,7 +155,7 @@ function showNote() {
 
 // دالة إظهار الرسالة النهائية
 function showFinalMessage() {
-    celebrationSection.classList.remove('active');
+    noteSection.classList.remove('active');
     setTimeout(() => {
         finalSection.classList.add('active');
     }, 1000);
